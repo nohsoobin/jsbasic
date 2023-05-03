@@ -28,10 +28,6 @@ const ul = document.querySelector(".items")
 // ul.lastElementChild.remove();
 // ul.lastElementChild.remove();
 
-ul.firstElementChild.textContent = "Hello world"
-ul.children[1].innerText = "Byoungcheon Lee"
-ul.children[2].innerHTML = "<h2>이병천</h2>"
-
 // Change style
 const btn = document.querySelector(".btn")
 // btn.style.background = 'red';
@@ -60,7 +56,6 @@ function onSubmit(e) {
   e.preventDefault()
   //f5누르면, 살아있게 됨
 
-  //console.log(nameInput.value);
   if (nameInput.value === "" || emailInput.value === "") {
     msg.innerHTML = "Please enter all fields"
     msg.classList.add("error")
